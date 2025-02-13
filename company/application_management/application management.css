@@ -1,0 +1,40 @@
+/* company login application management css file */* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Use proper font-family declaration */
+body {
+    font-family: "Poppins", sans-serif;
+}
+.search-box{
+    display: flex;
+    padding: 10px;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.summary-box{
+    background-color: blueviolet;
+    color: white;
+    margin: 50px;
+    padding: 30px;
+    height: 70px;
+    width: 250px;
+    flex-basis: 20px;
+    flex-grow: 1;
+    position: relative;
+    
+}
+.status-box{
+    background-color:lightblue;
+    color: white;
+    margin: 50px;
+    padding: 30px;
+    height: 70px;
+    width: 250px;
+    flex-basis: 20px;
+    flex-grow: 1;
+    position: relative;
+}
