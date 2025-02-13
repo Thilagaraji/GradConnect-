@@ -1,0 +1,151 @@
+/* company login home page css file */
+/* company login application management css file */* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Use proper font-family declaration */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+    color: rgb(66, 153, 245);
+}
+
+/* Menu */
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Places it right below menu-toggle */
+    left: 75%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.menu_links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Show the menu when toggled */
+.menu.show {
+    display: block;
+}
+
+/* Menu links */
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: block;
+    padding: 8px 0;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: rgb(66, 153, 245);
+}
+
+/* Language Dropdown */
+.language-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#language-toggle {
+    background-color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.language-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Places it below the button */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.language-menu p {
+    padding: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.language-menu p:hover {
+    background-color: #eaeaea;
+    color: rgb(66, 153, 245);
+}
+
+/* Show the language menu */
+.language-menu.show {
+    display: block;
+}
+
+/* Search bar */
+.product-search {
+    width: 45vw;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.product-search input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
